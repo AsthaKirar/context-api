@@ -1,9 +1,8 @@
-import React from 'react'
+import {useContext} from 'react'
 import Top from "./component/Top"
-import { todoContext } from './contexts/TodoContext'
-
+import TodoContext from './contexts/TodoContext';
 const App = () => {
-  const data = useContext(todocontext);
+  const data = useContext(TodoContext);
   console.log(data);
   return (
     <div>App </div>

@@ -1,12 +1,12 @@
 import {createContext} from 'react'
-export const todoContext = createContext(null);
-
+export const Context = createContext(null);
 const TodoContext = (props) => {
     console.log(props)
   return (
-    <TodoContext.Provider>{props.children}
+    <Context.Provider value="heloow">
+      {props.children}
 
-    </TodoContext.Provider>
+    </Context.Provider>
     
   )
 }
